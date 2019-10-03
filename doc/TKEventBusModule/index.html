@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TKEventBusModule  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="TKEventBusModule  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">TKComponentization/TKEventBusModule</a></p>
+        <p class="header-right"><a href="https://github.com/zhuamaodeyu/TKEventBusModule.git"><img src="img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="dash-feed://https%3A%2F%2Fgithub%2Ecom%2Fdocsets%2FTKEventBusModule%2Exml"><img src="img/dash.png"/>Install in Dash</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">TKEventBusModule Reference</a>
+        <img id="carat" src="img/carat.png" />
+        TKEventBusModule  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="NameSpace.html">NameSpace</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/TKEventSubscriber.html">TKEventSubscriber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/EventSubscriberProtocol.html">EventSubscriberProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocol.html">Protocol</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocol.html#/s:16TKEventBusModule0A8ProtocolP">TKEventProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Event%2FEventBus%20and%20Publish.html">Event/EventBus and Publish</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/TKEventBus.html">TKEventBus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/TKEvent.html">TKEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/TKEvent/Name.html">– Name</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Subscriber.html">Subscriber</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/EventSubscriberMaker.html">EventSubscriberMaker</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Complation%20Block.html">Complation Block</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Complation%20Block.html#/s:16TKEventBusModule10Complationa">Complation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Complation%20Block.html#/s:16TKEventBusModule19MoreEventComplationa">MoreEventComplation</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <h1 id='tkeventbusmodule' class='heading'>TKEventBusModule</h1>
+
+<p><a href="https://travis-ci.org/zhuamaodeyu/TKEventBusModule"><img src="https://img.shields.io/travis/zhuamaodeyu/TKEventBusModule.svg?style=flat" alt="CI Status"></a>
+<a href="https://cocoapods.org/pods/TKEventBusModule"><img src="https://img.shields.io/cocoapods/v/TKEventBusModule.svg?style=flat" alt="Version"></a>
+<a href="https://cocoapods.org/pods/TKEventBusModule"><img src="https://img.shields.io/cocoapods/l/TKEventBusModule.svg?style=flat" alt="License"></a>
+<a href="https://cocoapods.org/pods/TKEventBusModule"><img src="https://img.shields.io/cocoapods/p/TKEventBusModule.svg?style=flat" alt="Platform"></a></p>
+<h2 id='example' class='heading'>Example</h2>
+
+<p>To run the example project, clone the repo, and run <code>pod install</code> from the Example directory first.</p>
+<h2 id='requirements' class='heading'>Requirements</h2>
+<h2 id='installation' class='heading'>Installation</h2>
+
+<p>TKEventBusModule is available through <a href="https://cocoapods.org">CocoaPods</a>. To install
+it, simply add the following line to your Podfile:</p>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'TKEventBusModule'</span>
+</code></pre>
+<h2 id='example' class='heading'>Example</h2>
+<h3 id='1-subscriber' class='heading'>1. Subscriber</h3>
+
+<ol>
+<li><p><code>Import</code></p>
+<pre class="highlight plaintext"><code>import TKEventBusModule
+</code></pre></li>
+<li><p>subscribe for NSObject subclass or add protocol <code><a href="Protocols/TKEventSubscriber.html">TKEventSubscriber</a></code> </p>
+<pre class="highlight plaintext"><code>self.bus.subscribe(on: .login) { (event) in
+    debugPrint("单独事件响应")
+    debugPrint("测试时间：\(CACurrentMediaTime() - (self.start ?? 0))")
+}
+
+</code></pre></li>
+<li><p>custom Subscriber   </p>
+<pre class="highlight plaintext"><code>struct Present: TKEventSubscriber {
+
+}
+private var present = Present() 
+
+present.bus.subscribe(on: .login) { (event) in
+    debugPrint("单独事件响应")
+    debugPrint("测试时间：\(CACurrentMediaTime() - (self.start ?? 0))")
+}
+</code></pre>
+<h4 id='pause-restore' class='heading'>Pause/ restore</h4></li>
+<li><p>Pause </p>
+<pre class="highlight plaintext"><code>self.bus.pauseSubscribe(on: .login)
+
+</code></pre></li>
+<li><p>Restore </p>
+<pre class="highlight plaintext"><code>self.bus.restoreSubscribe(on: .login)
+
+</code></pre></li>
+</ol>
+<h3 id='2-publish' class='heading'>2. Publish.</h3>
+
+<ol>
+<li><p>Create Event need name and data object.     </p>
+<pre class="highlight plaintext"><code>let event = TKEvent.init(.login, data: "事件1", jsonString:"")
+
+TKEventBus.instance.publish(event) 
+
+</code></pre>
+
+<p><strong>Note:</strong> if use from Componentization,need use <code>init(_ name: , data:, jsonString:)</code></p></li>
+</ol>
+<h5 id='notification-support' class='heading'>Notification support</h5>
+<pre class="highlight plaintext"><code>let notification = Notification.init(name: .notification, object: "系统测试通知", userInfo: nil)
+TKEventBus.instance.publish(notification)
+
+</code></pre>
+<h2 id='author' class='heading'>Author</h2>
+
+<p>zhuamaodeyu, <a href="mailto:playtomandjerry@gmail.com">playtomandjerry@gmail.com</a></p>
+<h2 id='license' class='heading'>License</h2>
+
+<p>TKEventBusModule is available under the MIT license. See the LICENSE file for more info.</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>© 2018 <a class="link" href="https://github.com/zhuamaodeyu/knowledge" target="_blank" rel="external">抓猫的鱼</a> under <a class="link" href="https://github.com/zhuamaodeyu/TKAuthorityModule/blob/master/LICENSE" target="_blank" rel="external">open source license</a>.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

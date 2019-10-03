@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>subscribe(on:complation:) Instance Method Reference</title>
+    <link rel="stylesheet" type="text/css" href="../../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../../js/jquery.min.js" defer></script>
+    <script src="../../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Method/subscribe(on:complation:)" class="dashAnchor"></a>
+    <a title="subscribe(on:complation:) Instance Method Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../../index.html">TKComponentization/TKEventBusModule</a></p>
+        <p class="header-right"><a href="https://github.com/zhuamaodeyu/TKEventBusModule.git"><img src="../../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="dash-feed://https%3A%2F%2Fgithub%2Ecom%2Fdocsets%2FTKEventBusModule%2Exml"><img src="../../img/dash.png"/>Install in Dash</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../../index.html">TKEventBusModule Reference</a>
+        <img id="carat" src="../../img/carat.png" />
+        subscribe(on:complation:) Instance Method Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../NameSpace.html">NameSpace</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Protocols/TKEventSubscriber.html">TKEventSubscriber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/EventSubscriberProtocol.html">EventSubscriberProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Protocol.html">Protocol</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Protocol.html#/s:16TKEventBusModule0A8ProtocolP">TKEventProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Event%2FEventBus%20and%20Publish.html">Event/EventBus and Publish</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Classes/TKEventBus.html">TKEventBus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/TKEvent.html">TKEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/TKEvent/Name.html">– Name</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Subscriber.html">Subscriber</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Classes/EventSubscriberMaker.html">EventSubscriberMaker</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Complation%20Block.html">Complation Block</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Complation%20Block.html#/s:16TKEventBusModule10Complationa">Complation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Complation%20Block.html#/s:16TKEventBusModule19MoreEventComplationa">MoreEventComplation</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>subscribe(on:complation:)</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">subscribe</span><span class="p">(</span><span class="n">on</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">,</span> <span class="nv">complation</span><span class="p">:</span> <span class="kt"><a href="../../Complation%20Block.html#/s:16TKEventBusModule10Complationa">Complation</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                </div>
+              </div>
+            <p>订阅通知类型事件</p>
+
+<ul>
+<li><p>Example:</p>
+<pre class="highlight swift"><code><span class="k">self</span><span class="o">.</span><span class="n">bus</span><span class="o">.</span><span class="nf">subscribe</span><span class="p">(</span><span class="nv">on</span><span class="p">:</span> <span class="o">.</span><span class="n">notification</span><span class="p">)</span> <span class="p">{</span> <span class="p">(</span><span class="n">event</span><span class="p">)</span> <span class="k">in</span>
+
+    <span class="k">do</span> <span class="n">some</span> <span class="n">thing</span>
+<span class="p">}</span>
+</code></pre></li>
+</ul>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16TKEventBusModule20EventSubscriberMakerC9subscribe2on10complationACyxGXDSo18NSNotificationNamea_yAA0A8Protocol_pcSgtF"></a>
+                    <a name="//apple_ref/swift/Method/subscribe(on:complation:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16TKEventBusModule20EventSubscriberMakerC9subscribe2on10complationACyxGXDSo18NSNotificationNamea_yAA0A8Protocol_pcSgtF">subscribe(on:complation:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">subscribe</span><span class="p">(</span><span class="n">on</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">,</span> <span class="nv">complation</span><span class="p">:</span> <span class="kt"><a href="../../Complation%20Block.html#/s:16TKEventBusModule10Complationa">Complation</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>© 2018 <a class="link" href="https://github.com/zhuamaodeyu/knowledge" target="_blank" rel="external">抓猫的鱼</a> under <a class="link" href="https://github.com/zhuamaodeyu/TKAuthorityModule/blob/master/LICENSE" target="_blank" rel="external">open source license</a>.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
