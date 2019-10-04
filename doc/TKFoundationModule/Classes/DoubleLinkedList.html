@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DoubleLinkedList Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/DoubleLinkedList" class="dashAnchor"></a>
+    <a title="DoubleLinkedList Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">TKComponentization/TKFoundationModule</a></p>
+        <p class="header-right"><a href="https://github.com/zhuamaodeyu/TKFoundationModule.git"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="dash-feed://https%3A%2F%2Fgithub%2Ecom%2Fdocsets%2FTKFoundationModule%2Exml"><img src="../img/dash.png"/>Install in Dash</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">TKFoundationModule Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        DoubleLinkedList Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Namespace.html">Namespace</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/NamespaceWrappable.html">NamespaceWrappable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TypeWrapperProtocol.html">TypeWrapperProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NamespaceWrapper.html">NamespaceWrapper</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Array.html">Array</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/ArrayProxy.html">ArrayProxy</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Dictionary.html">Dictionary</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/DictionaryProxy.html">DictionaryProxy</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../List.html">List</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/DoubleLinkedList.html">DoubleLinkedList</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DoubleLinkedList/Iterator.html">– Iterator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DoubleLinkedListNode.html">DoubleLinkedListNode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../data%20structure.html">data structure</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Stack.html">Stack</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StackProtocol.html">StackProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Queue.html">Queue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/QueueProtocol.html">QueueProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DelayQueue.html">DelayQueue</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Method%20Swizzing.html">Method Swizzing</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/SwizzingProtocol.html">SwizzingProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Foundtion%20Extenions.html">Foundtion Extenions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/FunctionProtocol.html">FunctionProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Float.html">Float</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Double.html">Double</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Guides.html">Other Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../readme.html">README</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Classes.html">Other Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/SwizzingMethod.html">SwizzingMethod</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Enums.html">Other Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/DateFormatType.html">DateFormatType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Extensions.html">Other Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Application.html">Application</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Dictionary.html">Dictionary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/DispatchQueue.html">DispatchQueue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/FileManager.html">FileManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/FileManager/PathType.html">– PathType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Optional.html">Optional</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Sequence.html">Sequence</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/URL.html">URL</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Functions.html">Other Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Other%20Functions.html#/s:18TKFoundationModule10debugPrint7message9dsohandle12columnNumber8fileName06methodJ004lineH0yypSg_SVSiS2SSitF">debugPrint(message:dsohandle:columnNumber:fileName:methodName:lineNumber:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Functions.html#/s:18TKFoundationModule5print7message9dsohandle12columnNumber8fileName06methodI004lineG0yypSg_SVSiS2SSitF">print(message:dsohandle:columnNumber:fileName:methodName:lineNumber:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Functions.html#/s:18TKFoundationModule12printAddress6valuesyyXld_tF">printAddress(values:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Functions.html#/s:18TKFoundationModule12synchronizedyxyXl_xyKXEtKlF">synchronized(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Typealiases.html">Other Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Other%20Typealiases.html#/Application">Application</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Typealiases.html#/s:18TKFoundationModule11Applicationa">Application</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Typealiases.html#/BezierPath">BezierPath</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Typealiases.html#/s:18TKFoundationModule10BezierPatha">BezierPath</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Typealiases.html#/Button">Button</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Typealiases.html#/s:18TKFoundationModule6Buttona">Button</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Typealiases.html#/Color">Color</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Typealiases.html#/s:18TKFoundationModule5Colora">Color</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Typealiases.html#/Control">Control</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Typealiases.html#/s:18TKFoundationModule7Controla">Control</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Typealiases.html#/Font">Font</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Typealiases.html#/s:18TKFoundationModule4Fonta">Font</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Typealiases.html#/Image">Image</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Typealiases.html#/s:18TKFoundationModule5Imagea">Image</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Typealiases.html#/s:18TKFoundationModule10QueueBlocka">QueueBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Typealiases.html#/Responder">Responder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Typealiases.html#/s:18TKFoundationModule9Respondera">Responder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Typealiases.html#/Screen">Screen</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Typealiases.html#/s:18TKFoundationModule6Screena">Screen</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Typealiases.html#/ScrollView">ScrollView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Typealiases.html#/s:18TKFoundationModule10ScrollViewa">ScrollView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Typealiases.html#/StackView">StackView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Typealiases.html#/s:18TKFoundationModule9StackViewa">StackView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Typealiases.html#/TextField">TextField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Typealiases.html#/s:18TKFoundationModule9TextFielda">TextField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Typealiases.html#/TextView">TextView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Typealiases.html#/s:18TKFoundationModule8TextViewa">TextView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Typealiases.html#/View">View</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Typealiases.html#/s:18TKFoundationModule4Viewa">View</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Typealiases.html#/ViewController">ViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Typealiases.html#/s:18TKFoundationModule14ViewControllera">ViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Typealiases.html#/Window">Window</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Typealiases.html#/s:18TKFoundationModule6Windowa">Window</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>DoubleLinkedList</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">DoubleLinkedList</span><span class="o">&lt;</span><span class="kt">V</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>泛型双向链表</p>
+<div class="aside aside-date">
+    <p class="aside-title">Date</p>
+    
+</div>
+<div class="aside aside-author">
+    <p class="aside-title">Author</p>
+    抓猫的鱼
+
+</div>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Append%20Extension"></a>
+                <a name="//apple_ref/swift/Section/Append Extension" class="dashAnchor"></a>
+                <a href="#/Append%20Extension">
+                  <h3 class="section-name">Append Extension</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18TKFoundationModule16DoubleLinkedListC6appendyyxF"></a>
+                    <a name="//apple_ref/swift/Method/append(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18TKFoundationModule16DoubleLinkedListC6appendyyxF">append(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>追加节点</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    内部会根据数据来创建对应的节点
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">append</span><span class="p">(</span><span class="n">_</span> <span class="nv">newElement</span><span class="p">:</span> <span class="kt">V</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>newElement</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>新的 元素 数据模型</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18TKFoundationModule16DoubleLinkedListC6append10contentsOfyqd___t7ElementQyd__RszSTRd__lF"></a>
+                    <a name="//apple_ref/swift/Method/append(contentsOf:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18TKFoundationModule16DoubleLinkedListC6append10contentsOfyqd___t7ElementQyd__RszSTRd__lF">append(contentsOf:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>追加多个</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    内部会根据数组创建多个新的节点追加
+
+</div>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code>append(_ newElement: V)</code>
+
+</div>
+<div class="aside aside-remark">
+    <p class="aside-title">Remark</p>
+    多次调用<code>append(_ newElement: V)</code>创建节点
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">append</span><span class="o">&lt;</span><span class="kt">S</span><span class="o">&gt;</span><span class="p">(</span><span class="n">contentsOf</span> <span class="nv">newElements</span><span class="p">:</span> <span class="kt">S</span><span class="p">)</span> <span class="k">where</span> <span class="kt">V</span> <span class="o">==</span> <span class="kt">S</span><span class="o">.</span><span class="kt">Element</span><span class="p">,</span> <span class="kt">S</span> <span class="p">:</span> <span class="kt">Sequence</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>newElements</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>数据元素数组</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18TKFoundationModule16DoubleLinkedListC6insert_2atyx_SitF"></a>
+                    <a name="//apple_ref/swift/Method/insert(_:at:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18TKFoundationModule16DoubleLinkedListC6insert_2atyx_SitF">insert(_:at:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>插入
+在链表中任意位置插入一个数据位为 <code>newElement</code>的节点</p>
+<div class="aside aside-precondition">
+    <p class="aside-title">Precondition</p>
+    <code>i &gt; 0 &amp;&amp; i &lt;= size</code>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">insert</span><span class="p">(</span><span class="n">_</span> <span class="nv">newElement</span><span class="p">:</span> <span class="kt">V</span><span class="p">,</span> <span class="n">at</span> <span class="nv">i</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>newElement</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>数据</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>i</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>位置</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18TKFoundationModule16DoubleLinkedListC6insert10contentsOf2atyqd___Sit7ElementQyd__RszSlRd__lF"></a>
+                    <a name="//apple_ref/swift/Method/insert(contentsOf:at:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18TKFoundationModule16DoubleLinkedListC6insert10contentsOf2atyqd___Sit7ElementQyd__RszSlRd__lF">insert(contentsOf:at:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>插入多个节点
+在 i 位置依次插入数据为 newElements 中元素的节点</p>
+<div class="aside aside-precondition">
+    <p class="aside-title">Precondition</p>
+    <code>i &gt; 0 &amp;&amp; i &lt;= size</code>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">insert</span><span class="o">&lt;</span><span class="kt">S</span><span class="o">&gt;</span><span class="p">(</span><span class="n">contentsOf</span> <span class="nv">newElements</span><span class="p">:</span> <span class="kt">S</span><span class="p">,</span> <span class="n">at</span> <span class="nv">i</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="k">where</span> <span class="kt">V</span> <span class="o">==</span> <span class="kt">S</span><span class="o">.</span><span class="kt">Element</span><span class="p">,</span> <span class="kt">S</span> <span class="p">:</span> <span class="kt">Collection</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>newElements</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>新插入节点数据位数组</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>i</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>插入位置</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/%E5%AE%9E%E7%8E%B0%20Collection%20%E5%8D%8F%E8%AE%AE"></a>
+                <a name="//apple_ref/swift/Section/实现 Collection 协议" class="dashAnchor"></a>
+                <a href="#/%E5%AE%9E%E7%8E%B0%20Collection%20%E5%8D%8F%E8%AE%AE">
+                  <h3 class="section-name">实现 Collection 协议</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18TKFoundationModule16DoubleLinkedListC10startIndexSivp"></a>
+                    <a name="//apple_ref/swift/Property/startIndex" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18TKFoundationModule16DoubleLinkedListC10startIndexSivp">startIndex</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>开始位置 索引</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">startIndex</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18TKFoundationModule16DoubleLinkedListC8endIndexSivp"></a>
+                    <a name="//apple_ref/swift/Property/endIndex" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18TKFoundationModule16DoubleLinkedListC8endIndexSivp">endIndex</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>结束位置 索引</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">endIndex</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18TKFoundationModule16DoubleLinkedListC5index5afterS2i_tF"></a>
+                    <a name="//apple_ref/swift/Method/index(after:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18TKFoundationModule16DoubleLinkedListC5index5afterS2i_tF">index(after:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>i 下一个位置索引</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <code>i &gt; 0</code>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">index</span><span class="p">(</span><span class="n">after</span> <span class="nv">i</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>i</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>当前位置</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>下个位置索引</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18TKFoundationModule16DoubleLinkedListC12makeIteratorAC0G0Vyx_GyF"></a>
+                    <a name="//apple_ref/swift/Method/makeIterator()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18TKFoundationModule16DoubleLinkedListC12makeIteratorAC0G0Vyx_GyF">makeIterator()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>返回迭代器</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <code>Iterator(self)</code>
+
+</div>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Classes/DoubleLinkedList/Iterator.html">Iterator</a></code> class
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">makeIterator</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/DoubleLinkedList/Iterator.html">Iterator</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>当前自己迭代器</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18TKFoundationModule16DoubleLinkedListCyxSicip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18TKFoundationModule16DoubleLinkedListCyxSicip">subscript(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>通过下标存取元素
+通过下标获取/设置节点数据</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">subscript</span><span class="p">(</span><span class="nv">position</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">V</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>position</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>下标</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>节点数据</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/%E8%BF%AD%E4%BB%A3%E5%99%A8"></a>
+                <a name="//apple_ref/swift/Section/迭代器" class="dashAnchor"></a>
+                <a href="#/%E8%BF%AD%E4%BB%A3%E5%99%A8">
+                  <h3 class="section-name">迭代器</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18TKFoundationModule16DoubleLinkedListC8IteratorV"></a>
+                    <a name="//apple_ref/swift/Struct/Iterator" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18TKFoundationModule16DoubleLinkedListC8IteratorV">Iterator</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Iterator</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    实现 IteratorProtocol 协议
+
+</div>
+
+                        <a href="../Classes/DoubleLinkedList/Iterator.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Iterator</span> <span class="p">:</span> <span class="kt">IteratorProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/%E8%BF%AD%E4%BB%A3%E5%99%A82"></a>
+                <a name="//apple_ref/swift/Section/迭代器" class="dashAnchor"></a>
+                <a href="#/%E8%BF%AD%E4%BB%A3%E5%99%A82">
+                  <h3 class="section-name">迭代器</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18TKFoundationModule16DoubleLinkedListC6remove2atxSi_tF"></a>
+                    <a name="//apple_ref/swift/Method/remove(at:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18TKFoundationModule16DoubleLinkedListC6remove2atxSi_tF">remove(at:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>删除节点</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    默认返回对应删除节点存储的数据，可以不使用
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">remove</span><span class="p">(</span><span class="n">at</span> <span class="nv">position</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">V</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>节点数据</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18TKFoundationModule16DoubleLinkedListC15removefirstNodexSgyF"></a>
+                    <a name="//apple_ref/swift/Method/removefirstNode()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18TKFoundationModule16DoubleLinkedListC15removefirstNodexSgyF">removefirstNode()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>删除第一个节点</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    链表为空时，返回nil
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">removefirstNode</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">V</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>节点数据</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18TKFoundationModule16DoubleLinkedListC14removelastNodexSgyF"></a>
+                    <a name="//apple_ref/swift/Method/removelastNode()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18TKFoundationModule16DoubleLinkedListC14removelastNodexSgyF">removelastNode()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>删除最后一个节点</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    链表为空，返回 nil
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">removelastNode</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">V</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>数据 可选类型</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18TKFoundationModule16DoubleLinkedListC9removeAllyyF"></a>
+                    <a name="//apple_ref/swift/Method/removeAll()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18TKFoundationModule16DoubleLinkedListC9removeAllyyF">removeAll()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>删除所有元素</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    清空所有链表
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">removeAll</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/%E8%BF%AD%E4%BB%A3%E5%99%A83"></a>
+                <a name="//apple_ref/swift/Section/迭代器" class="dashAnchor"></a>
+                <a href="#/%E8%BF%AD%E4%BB%A3%E5%99%A83">
+                  <h3 class="section-name">迭代器</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18TKFoundationModule16DoubleLinkedListC10firstIndex5whereSiSgSbxKXE_tKF"></a>
+                    <a name="//apple_ref/swift/Method/firstIndex(where:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18TKFoundationModule16DoubleLinkedListC10firstIndex5whereSiSgSbxKXE_tKF">firstIndex(where:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>顺序查找
+正序查找</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    throws value description
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">firstIndex</span><span class="p">(</span><span class="k">where</span> <span class="nv">predicate</span><span class="p">:</span> <span class="p">(</span><span class="kt">V</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">)</span> <span class="k">rethrows</span> <span class="o">-&gt;</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>predicate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>查找条件block</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>首个符合条件索引 可选类型</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18TKFoundationModule16DoubleLinkedListC9lastIndex5whereSiSgSbxKXE_tKF"></a>
+                    <a name="//apple_ref/swift/Method/lastIndex(where:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18TKFoundationModule16DoubleLinkedListC9lastIndex5whereSiSgSbxKXE_tKF">lastIndex(where:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>倒序查找
+倒序查找</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    throws value description
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">lastIndex</span><span class="p">(</span><span class="k">where</span> <span class="nv">predicate</span><span class="p">:</span> <span class="p">(</span><span class="kt">V</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">)</span> <span class="k">rethrows</span> <span class="o">-&gt;</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>predicate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>查找条件 block</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>首个符合条件索引，</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18TKFoundationModule16DoubleLinkedListC8contains5whereS2bxKXE_tKF"></a>
+                    <a name="//apple_ref/swift/Method/contains(where:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18TKFoundationModule16DoubleLinkedListC8contains5whereS2bxKXE_tKF">contains(where:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>是否包含
+包含</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    throws value description
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">contains</span><span class="p">(</span><span class="k">where</span> <span class="nv">predicate</span><span class="p">:</span> <span class="p">(</span><span class="kt">V</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">)</span> <span class="k">rethrows</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>predicate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>条件block</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>true/ false</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/%E8%BF%AD%E4%BB%A3%E5%99%A84"></a>
+                <a name="//apple_ref/swift/Section/迭代器" class="dashAnchor"></a>
+                <a href="#/%E8%BF%AD%E4%BB%A3%E5%99%A84">
+                  <h3 class="section-name">迭代器</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18TKFoundationModule16DoubleLinkedListCAASQRzlE10firstIndex2ofSiSgx_tF"></a>
+                    <a name="//apple_ref/swift/Method/firstIndex(of:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18TKFoundationModule16DoubleLinkedListCAASQRzlE10firstIndex2ofSiSgx_tF">firstIndex(of:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>正序查找</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">firstIndex</span><span class="p">(</span><span class="n">of</span> <span class="nv">element</span><span class="p">:</span> <span class="kt">V</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>element</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>值域</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>索引</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18TKFoundationModule16DoubleLinkedListCAASQRzlE9lastIndex2ofSiSgx_tF"></a>
+                    <a name="//apple_ref/swift/Method/lastIndex(of:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18TKFoundationModule16DoubleLinkedListCAASQRzlE9lastIndex2ofSiSgx_tF">lastIndex(of:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>值域相同的最有一个节点(倒序查找)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">lastIndex</span><span class="p">(</span><span class="n">of</span> <span class="nv">element</span><span class="p">:</span> <span class="kt">V</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>element</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>值域</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>索引</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18TKFoundationModule16DoubleLinkedListCAASQRzlE8containsySbxF"></a>
+                    <a name="//apple_ref/swift/Method/contains(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18TKFoundationModule16DoubleLinkedListCAASQRzlE8containsySbxF">contains(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>包含</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">contains</span><span class="p">(</span><span class="n">_</span> <span class="nv">element</span><span class="p">:</span> <span class="kt">V</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>element</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>值域</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>true/false</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18TKFoundationModule16DoubleLinkedListCAASQRzlE4find2byAA0cdE4NodeCyxGSgx_tF"></a>
+                    <a name="//apple_ref/swift/Method/find(by:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18TKFoundationModule16DoubleLinkedListCAASQRzlE4find2byAA0cdE4NodeCyxGSgx_tF">find(by:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>通过 值域  获取节点</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">find</span><span class="p">(</span><span class="n">by</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">V</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/DoubleLinkedListNode.html">DoubleLinkedListNode</a></span><span class="o">&lt;</span><span class="kt">V</span><span class="o">&gt;</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>值</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>节点， 可选类型值</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18TKFoundationModule16DoubleLinkedListCAASQRzlE7removes2atySayxG_tF"></a>
+                    <a name="//apple_ref/swift/Method/removes(at:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18TKFoundationModule16DoubleLinkedListCAASQRzlE7removes2atySayxG_tF">removes(at:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>删除节点，通过值域数组</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">removes</span><span class="p">(</span><span class="nv">at</span><span class="p">:</span> <span class="p">[</span><span class="kt">V</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>at</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>值域数组</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/%E6%8A%8ALinkedList%E8%BD%AC%E6%88%90Array"></a>
+                <a name="//apple_ref/swift/Section/把LinkedList转成Array" class="dashAnchor"></a>
+                <a href="#/%E6%8A%8ALinkedList%E8%BD%AC%E6%88%90Array">
+                  <h3 class="section-name">把LinkedList转成Array</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18TKFoundationModule16DoubleLinkedListC7toArraySayxGyF"></a>
+                    <a name="//apple_ref/swift/Method/toArray()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18TKFoundationModule16DoubleLinkedListC7toArraySayxGyF">toArray()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>LINK &mdash;-&gt; ARRAY</p>
+<div class="aside aside-remark">
+    <p class="aside-title">Remark</p>
+    将所有节点数据转换为数组返回
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">toArray</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">V</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>数据数组</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/CustomDebugStringConvertible%E5%8D%8F%E8%AE%AE%EF%BC%8C%E9%80%9A%E8%BF%87%E5%AE%9E%E7%8E%B0%E8%AF%A5%E5%8D%8F%E8%AE%AE%EF%BC%8C%E5%AE%9E%E7%8E%B0%E8%87%AA%E5%AE%9A%E4%B9%89%E6%89%93%E5%8D%B0"></a>
+                <a name="//apple_ref/swift/Section/CustomDebugStringConvertible协议，通过实现该协议，实现自定义打印" class="dashAnchor"></a>
+                <a href="#/CustomDebugStringConvertible%E5%8D%8F%E8%AE%AE%EF%BC%8C%E9%80%9A%E8%BF%87%E5%AE%9E%E7%8E%B0%E8%AF%A5%E5%8D%8F%E8%AE%AE%EF%BC%8C%E5%AE%9E%E7%8E%B0%E8%87%AA%E5%AE%9A%E4%B9%89%E6%89%93%E5%8D%B0">
+                  <h3 class="section-name">CustomDebugStringConvertible协议，通过实现该协议，实现自定义打印</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18TKFoundationModule16DoubleLinkedListC16debugDescriptionSSvp"></a>
+                    <a name="//apple_ref/swift/Property/debugDescription" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18TKFoundationModule16DoubleLinkedListC16debugDescriptionSSvp">debugDescription</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>debug description</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    将所有节点数据转换为 string 返回
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">debugDescription</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>© 2018 <a class="link" href="https://github.com/zhuamaodeyu/knowledge" target="_blank" rel="external">抓猫的鱼</a> under <a class="link" href="https://github.com/zhuamaodeyu/TKFoundationModule/blob/master/LICENSE" target="_blank" rel="external">open source license</a>.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
